@@ -1,0 +1,40 @@
+/*
+Theme Name: HappyAbode 2020
+Theme URI: myhappyabode.ca
+Description: Child theme based on Twenty Twenty developed for DevTools 2, Summer 2020.
+Author: Jessica Naval
+Version: 1.0
+Template: twentytwenty
+*/
+
+@import url('../HappyAbode-2020/style.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*This changes the body font to Montserrat*/
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*This changes the entry content font to Roboto Light*/
+.entry-content {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*This changes the links to Happy Abode green*/
+body:not(.overlay-header) .primary-menu > li > a, body:not(.overlay-header) .primary-menu > li > .icon, 
+.modal-menu a, .footer-menu a, .footer-widgets a, #site-footer .wp-block-button.is-style-outline, 
+.wp-block-pullquote:before, .singular:not(.overlay-header) .entry-header a, .archive-header a, 
+.header-footer-group .color-accent, .header-footer-group .color-accent-hover:hover {
+    color: #1e856f;
+}
+
+/*This changes the buttons to Happy Abode green*/
+button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, 
+input[type="button"], input[type="reset"], input[type="submit"], .bg-accent, .bg-accent-hover:hover, 
+.bg-accent-hover:focus, :root .has-accent-background-color, .comment-reply-link {
+    background-color: #1e856f;
+}
