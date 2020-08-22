@@ -1,0 +1,60 @@
+/*
+Theme Name: HappyAbode 2016
+Theme URI: myhappyabode.ca
+Description: Child theme based on Twenty Sixteen developed for DevTools 2, Summer 2020.
+Author: Jessica Naval
+Version: 1.0
+Template: twentysixteen
+*/
+
+@import url('../HappyAbode-2016/style.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*This changes the body font to Montserrat*/
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*This changes the entry content font to Roboto Light*/
+.entry-content {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*This changes the hover links to Happy Abode green*/
+.main-navigation a {
+    color: #1e856f;
+    display: block;
+    line-height: 1.3125;
+}
+
+.main-navigation a:hover, .main-navigation a:focus {
+    color: #1e856f;
+}
+
+/*This changes page title colours to Happy Abode green & hover blue*/
+.site-branding .site-title a {
+    color: #1e856f;
+}
+
+.site-branding .site-title a:hover, .site-branding .site-title a:focus {
+    color: #2e4154;
+}
+
+/*This changes link colours to Happy Abode blue & hover green*/
+a:hover, a:focus, a:active {
+    color: #2e4154;
+}
+
+a {
+    color: #1e856f;
+    text-decoration: none;
+}
+
+/*This changes link colours to Happy Abode green*/
+body, button, input, select, textarea {
+    color: #2e4154;
+}
