@@ -7,8 +7,6 @@ Version: 1.0
 Template: twentysixteen
 */
 
-@import url('../HappyAbode-2016/style.css');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap');
 
 /* font-family: 'Montserrat', sans-serif;
@@ -39,16 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3125;
 }
 
-.main-navigation a:hover, .main-navigation a:focus {
-    color: #1e856f;
-}
-
-/*This changes page title colours to Happy Abode green & hover blue*/
-.site-branding .site-title a {
-    color: #1e856f;
-}
-
-.site-branding .site-title a:hover, .site-branding .site-title a:focus {
+.main-navigation li a:hover, .main-navigation li a:focus {
     color: #2e4154;
 }
 
@@ -67,23 +56,50 @@ body, button, input, select, textarea {
     color: #2e4154;
 }
 
-/*This is to have smaller margin inside tables*/
-@media screen and (min-width: 61.5625em) 
-.entry-content h5 {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.1052631579;
-    margin-top: .5em;
-    margin-bottom: .5em;
+/*Logo*/
+.custom-logo-link .custom-logo {
+	    max-width: 100px;
 }
 
-/*This changes table border colour*/
+/*Page content to 100%*/
+.content-area {
+    width: 100%;
+}
+
+/*This is to have smaller margin inside tables*/
+@media screen and (min-width: 61.5625em) {
+	.entry-content h5 {
+	    margin-top: .5em;
+	    margin-bottom: .5em;
+	}
+}
+
+/*This removes table border*/
 table {
-    border-collapse: separate;
-    border-spacing: 0;
     border-color: transparent;
     border-width: 0px 0 0 0px;
-    margin: 0 0 1.75em;
-    table-layout: fixed;
-    width: 100%;
 } 
+
+.wp-block-table table td {
+    border-width: 0;
+}
+
+/*Home customer testimonials text*/
+.testimonials table th, .testimonials table td {
+    text-align: center;
+}
+
+/*How It Works image*/
+.feature-image img {
+	text-align: center;
+}
+
+/*How It Works function table*/
+.function table td:first-child {
+    text-align: right;
+}
+
+.wp-block-image.is-resized.feature-image {
+    display: block;
+    text-align: center;
+}
