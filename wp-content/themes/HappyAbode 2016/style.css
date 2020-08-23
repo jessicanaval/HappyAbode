@@ -19,9 +19,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-/*This changes the entry content font to Roboto Light*/
+/*This changes the entry content font to Roboto and headings to Montserrat*/
 .entry-content {
 	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin: 0;
+    text-rendering: optimizeLegibility;
 }
 
 /*This changes the hover links to Happy Abode green*/
@@ -58,3 +66,24 @@ a {
 body, button, input, select, textarea {
     color: #2e4154;
 }
+
+/*This is to have smaller margin inside tables*/
+@media screen and (min-width: 61.5625em) 
+.entry-content h5 {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.1052631579;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+/*This changes table border colour*/
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-color: transparent;
+    border-width: 0px 0 0 0px;
+    margin: 0 0 1.75em;
+    table-layout: fixed;
+    width: 100%;
+} 
